@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">AppleStore Pro</div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html">Cart</a></li>
+    </ul>
+</nav>
+
+<section class="featured">
+
+    <h1>Products</h1>
+
+    <input
+        type="text"
+        id="search"
+        placeholder="Search products..."
+        onkeyup="searchProducts()"
+    >
+
+    <div class="product-grid" id="productGrid">
+
+        <div class="card">
+            <h3>iPhone 17 Pro</h3>
+            <p>₹119900</p>
+            <button onclick="addToCart('iPhone 17 Pro',119900)">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            <h3>MacBook Air</h3>
+            <p>₹99900</p>
+            <button onclick="addToCart('MacBook Air',99900)">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            <h3>Apple Watch Ultra</h3>
+            <p>₹89900</p>
+            <button onclick="addToCart('Apple Watch Ultra',89900)">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            <h3>AirPods Pro</h3>
+            <p>₹24900</p>
+            <button onclick="addToCart('AirPods Pro',24900)">
+                Add to Cart
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppleStore Pro</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            AppleStore Pro
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="cart.html">Cart (<span id="cartCount">0</span>)</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+        <h1>iPhone 17 Pro</h1>
+        <p>Titanium. Powerful. Beautiful.</p>
+        <div class="hero-buttons">
+            <a href="products.html" class="btn">Shop iPhone</a>
+            <a href="products.html" class="btn-outline">Learn More</a>
+        </div>
+    </section>
+
+    <section class="hero1">
+        <h1>MacBook Air</h1>
+        <p>Supercharged by Apple Silicon.</p>
+        <div class="hero-buttons">
+            <a href="products.html" class="btn">Buy Now</a>
+            <a href="products.html" class="btn-outline">Learn More</a>
+        </div>
+        <!-- <img src="images/macbook.png" alt="MacBook"> -->
+    </section>
+
+    <section class="hero2">
+        <h1>Apple Watch Ultra</h1>
+        <p>Adventure Awaits.</p>
+        <div class="hero-buttons">
+            <a href="products.html" class="btn">Buy Now</a>
+            <a href="products.html" class="btn-outline">Learn More</a>
+        </div>
+        <!-- <img src="images/watchbanner.png" alt="Watch"> -->
+    </section>
+
+    <!-- Featured Products -->
+
+    <section class="featured">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+
+            <div class="card">
+                <img src="images/iphonepro.jpg" alt="" onclick="openProduct('iPhone 17 Pro', 129900, 'images/iphonepro.jpg')">
+                <h3>iPhone 17 Pro</h3>
+                <p>₹1,29,900</p>
+                <button onclick="addToCart('iPhone 17 Pro',129900)">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="images/ipad.webp" alt="" onclick="openProduct('iPad Air', 59900, 'images/idad.webp')">
+                <h3>iPad Air</h3>
+                <p>₹59,900</p>
+                <button onclick="addToCart('iPad Air',59900)">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="images/macbook.png" alt="" onclick="openProduct('Macbook Air', 119900, 'images/macbook.png')">
+                <h3>MacBook Air</h3>
+                <p>₹1,19,900</p>
+                <button onclick="addToCart('Macbook Air',119900)">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="images/watch.jpg" alt="" onclick="openProduct('Apple Watch Ultra', 89900, 'images/watch.jpg')">
+                <h3>Apple Watch Ultra</h3>
+                <p>₹89,900</p>
+                <button onclick="addToCart('Apple Watch Ultra',89900)">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="images/airpods.jpg" alt="" onclick="openProduct('Airpods Pro', 24900, 'images/airpods.jpg')">
+                <h3>AirPods Pro</h3>
+                <p>₹24,900</p>
+                <button onclick="addToCart('Airpods Pro',24900)">Add to Cart</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Why Choose Us -->
+
+    <section class="why">
+
+        <h2>Why Choose Us</h2>
+
+        <div class="features">
+
+            <div class="feature">
+                <h3>⭐ Premium Quality</h3>
+                <p>Apple-inspired experience.</p>
+            </div>
+
+            <div class="feature">
+                <h3>🚚 Fast Delivery</h3>
+                <p>Quick doorstep shipping.</p>
+            </div>
+
+            <div class="feature">
+                <h3>🔒 Secure Payments</h3>
+                <p>100% safe transactions.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="socials">
+            <a href="#">Instagram</a>
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+        </div>
+        <p>© 2026 AppleStore Pro</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
