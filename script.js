@@ -117,5 +117,12 @@ function searchProducts(){
             card.style.display="none";
     });
 }
+function toggleMenu(){
+
+    document
+    .querySelector(".nav-links")
+    .classList.toggle("active");
+
+}
 
 displayCart();

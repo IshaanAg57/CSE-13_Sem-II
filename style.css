@@ -40,6 +40,11 @@ body{
     text-decoration:none;
     color:black;
 }
+.menu-btn{
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+}
 
 .hero{
     min-height:100vh;
@@ -417,14 +422,78 @@ footer{
     padding:40px;
     margin-top:50px;
 }
+
 @media(max-width:768px){
-    .hero h1{
-        font-size:3rem;
+    .navbar{
+        flex-wrap:wrap;
+        padding:15px;
     }
+
+    .menu-btn{
+        display:block;
+    }
+
     .nav-links{
-        gap:12px;
+        display:none;
+        width:100%;
+        flex-direction:column;
+        text-align:center;
+        margin-top:15px;
     }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .logo{
+        font-size:24px;
+    }
+
+    .hero h1,
+    .hero1 h1,
+    .hero2 h1{
+        font-size:2.8rem;
+    }
+
+    .hero p,
+    .hero1 p,
+    .hero2 p{
+        font-size:1.1rem;
+    }
+
+    .hero-buttons{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .btn,
+    .btn-outline{
+        padding:10px 20px;
+    }
+
+    .hero,
+    .hero1,
+    .hero2{
+        min-height:70vh;
+    }
+
     .product-grid{
-        grid-template-columns: 1fr;
+        grid-template-columns:repeat(2,1fr);
+        gap:15px;
+    }
+
+    .card img{
+        height:120px;
+    }
+    .card h3{
+        font-size:15px;
+    }
+}
+
+@media(max-width:480px){
+    .hero h1,
+    .hero1 h1,
+    .hero2 h1{
+        font-size:2.5rem;
     }
 }
