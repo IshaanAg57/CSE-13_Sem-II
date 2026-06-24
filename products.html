@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">AppleStore Pro</div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html">Cart</a></li>
+    </ul>
+</nav>
+
+<section class="featured">
+
+    <h1>Products</h1>
+
+    <input
+        type="text"
+        id="search"
+        placeholder="Search products..."
+        onkeyup="searchProducts()"
+    >
+
+    <div class="product-grid" id="productGrid">
+
+        <div class="card">
+            <img src="images\iphone17.webp" alt="">
+            <h3>iPhone 17</h3>
+            <p>₹82900</p>
+            <button onclick="addToCart('iPhone 17',82900)">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="images\iphonepro.jpg" alt="">
+            <h3>iPhone 17 Pro</h3>
+            <p>₹129900</p>
+            <button onclick="addToCart('iPhone 17 Pro',129900)">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="images\macbook.png" alt="">
+            <h3>MacBook Air</h3>
+            <p>₹119900</p>
+            <button onclick="addToCart('MacBook Air',119900)">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="images\macbookpro.png" alt="">
+            <h3>MacBook Pro</h3>
+            <p>₹289900</p>
+            <button onclick="addToCart('MacBook Pro',289900)">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="images\ipad.webp" alt="">
+            <h3>iPad Air</h3>
+            <p>59900</p>
+            <button onclick="addToCart('iPad Air',59900)">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="images\ipadpro.webp" alt="">
+            <h3>iPad Pro</h3>
+            <p>89900</p>
+            <button onclick="addToCart('iPad Pro',89900)">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="images\watchseries11.jpg" alt="">
+            <h3>Apple Watch Series 11</h3>
+            <p>₹56900</p>
+            <button onclick="addToCart('Apple Watch Series 11',56900)">
+                Add to Cart
+            </button>
+        </div>
+        
+        <div class="card">
+            <img src="images\watch.jpg" alt="">
+            <h3>Apple Watch Ultra</h3>
+            <p>₹89900</p>
+            <button onclick="addToCart('Apple Watch Ultra',89900)">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="images\airpods.jpg" alt="">
+            <h3>AirPods Pro</h3>
+            <p>₹24900</p>
+            <button onclick="addToCart('AirPods Pro',24900)">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="images\airpodsmax.webp" alt="">
+            <h3>AirPods Max</h3>
+            <p>₹59,900</p>
+            <button onclick="addToCart('AirPods Max',59900)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/applepencil.jpg" alt="">
+            <h3>Apple Pencil Pro</h3>
+            <p>₹11,900</p>
+            <button onclick="addToCart('Apple Pencil Pro',11900)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/keyboard.jpg" alt="">
+            <h3>Magic Keyboard</h3>
+            <p>₹14,900</p>
+            <button onclick="addToCart('Magic Keyboard',14900)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/magsafe.jpg" alt="">
+            <h3>MagSafe Charger</h3>
+            <p>₹4,500</p>
+            <button onclick="addToCart('MagSafe Charger',4500)">Add to Cart</button>
+        </div>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
