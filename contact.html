@@ -1,26 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Contact</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | AppleStore Pro</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-<section class="contact">
+<nav class="navbar">
+    <div class="logo">
+        <i class="fa-brands fa-apple"></i>
+        AppleStore Pro
+    </div>
 
-<h1>Contact Us</h1>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+</nav>
 
-<form>
+<section class="contact-page">
 
-<input type="text" placeholder="Name">
+    <div class="contact-left">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
 
-<input type="email" placeholder="Email">
+        <div class="contact-info">
+            <p>📧 support@applestorepro.com</p>
+            <p>📞 +91 8439185880</p>
+            <p>📍 Ghaziabad, Uttar Pradesh</p>
+        </div>
+    </div>
 
-<textarea placeholder="Message"></textarea>
-
-<button>Send Message</button>
-
-</form>
+    <div class="contact-right">
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Subject">
+            <textarea rows="6" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
 
 </section>
 
